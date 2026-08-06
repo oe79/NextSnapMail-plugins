@@ -20,7 +20,7 @@ class LoginGmailOauthPlugin extends \RainLoop\Plugins\AbstractPlugin
 {
 	const
 		NAME     = 'Login Gmail OAuth2',
-		VERSION  = '0.4',
+		VERSION  = '0.5',
 		RELEASE  = '2026-08-05',
 		AUTHOR   = 'NextSnapMail',
 		URL      = 'https://github.com/oe79/NextSnapMail',
@@ -222,16 +222,19 @@ class LoginGmailOauthPlugin extends \RainLoop\Plugins\AbstractPlugin
 
 	public function configMapping() : array
 	{
+		$redirectUri = $this->callbackUrl();
+
 		return [
 			\RainLoop\Plugins\Property::NewInstance('client_id')
 				->SetLabel('Client ID')
 				->SetType(\RainLoop\Enumerations\PluginPropertyType::STRING)
 				->SetAllowedInJs()
-				->SetDescription('Google Cloud OAuth client ID. Redirect URI: ' . $this->callbackUrl()),
+				->SetDescription('Google Cloud OAuth client ID. In Google Cloud Console create an OAuth client of type "Web application" and add this Authorized redirect URI: ' . $redirectUri),
 			\RainLoop\Plugins\Property::NewInstance('client_secret')
 				->SetLabel('Client Secret')
 				->SetType(\RainLoop\Enumerations\PluginPropertyType::STRING)
-				->SetEncrypted(),
+				->SetEncrypted()
+				->SetDescription('Google Cloud OAuth client secret. Authorized JavaScript origins are not required for this server-side flow. Authorized redirect URI: ' . $redirectUri),
 			\RainLoop\Plugins\Property::NewInstance('email_domains')
 				->SetLabel('Email domains')
 				->SetType(\RainLoop\Enumerations\PluginPropertyType::STRING_TEXT)

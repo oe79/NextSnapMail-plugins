@@ -3,9 +3,9 @@
     "type": "plugin",
     "id": "login-gmail-oauth",
     "name": "Login Gmail OAuth2",
-    "version": "0.4",
+    "version": "0.5",
     "release": "2026-08-05",
-    "file": "plugins/login-gmail-oauth-0.4.tgz",
+    "file": "plugins/login-gmail-oauth-0.5.tgz",
     "required": "2.36.1",
     "description": "Gmail and Google Workspace IMAP/SMTP login using current Google OAuth2 endpoints"
   }
