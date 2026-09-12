@@ -1,1 +1,572 @@
-[]
+[
+  {
+    "type": "plugin",
+    "id": "add-x-originating-ip-header",
+    "name": "X-Originating-IP",
+    "version": "2.0",
+    "release": "2026-09-12",
+    "file": "plugins/add-x-originating-ip-header-2.0.tgz",
+    "required": "2.38.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Adds X-Originating-IP header to outgoing message, containing sender\\"
+  },
+  {
+    "type": "plugin",
+    "id": "attachments-force-open",
+    "name": "Attachments force open",
+    "version": "0.1",
+    "release": "2024-03-15",
+    "file": "plugins/attachments-force-open-0.1.tgz",
+    "required": "2.14.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. SnappyMail legacy plugin"
+  },
+  {
+    "type": "plugin",
+    "id": "auto-domain-grab",
+    "name": "Auto Domain Selection",
+    "version": "2.9",
+    "release": "2022-11-11",
+    "file": "plugins/auto-domain-grab-2.9.tgz",
+    "required": "2.21.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Sets the IMAP/SMTP host based on the user\\"
+  },
+  {
+    "type": "plugin",
+    "id": "avatars",
+    "name": "Avatars",
+    "version": "1.22",
+    "release": "2025-03-10",
+    "file": "plugins/avatars-1.22.tgz",
+    "required": "2.33.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Show graphic of sender in message and messages list (supports BIMI, Gravatar, favicon and identicon, Contacts is still TODO)"
+  },
+  {
+    "type": "plugin",
+    "id": "backup",
+    "name": "Backup",
+    "version": "1.2",
+    "release": "2024-03-18",
+    "file": "plugins/backup-1.2.tgz",
+    "required": "2.30.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. SnappyMail legacy plugin"
+  },
+  {
+    "type": "plugin",
+    "id": "black-list",
+    "name": "Blacklist",
+    "version": "2.2",
+    "release": "2024-03-04",
+    "file": "plugins/black-list-2.2.tgz",
+    "required": "2.5.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Simple blacklist extension (with wildcard and exceptions functionality)."
+  },
+  {
+    "type": "plugin",
+    "id": "cache-apcu",
+    "name": "Cache APCu",
+    "version": "2.36",
+    "release": "2024-03-22",
+    "file": "plugins/cache-apcu-2.36.tgz",
+    "required": "2.36.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Cache handler using PHP APCu"
+  },
+  {
+    "type": "plugin",
+    "id": "cache-memcache",
+    "name": "Cache Memcache",
+    "version": "2.37",
+    "release": "2024-09-15",
+    "file": "plugins/cache-memcache-2.37.tgz",
+    "required": "2.36.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Cache handler using PHP Memcache or PHP Memcached"
+  },
+  {
+    "type": "plugin",
+    "id": "cache-redis",
+    "name": "Cache Redis",
+    "version": "2.36.2",
+    "release": "2024-04-08",
+    "file": "plugins/cache-redis-2.36.2.tgz",
+    "required": "2.36.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Cache handler using Redis"
+  },
+  {
+    "type": "plugin",
+    "id": "change-password",
+    "name": "Change Password",
+    "version": "2.38",
+    "release": "2024-04-22",
+    "file": "plugins/change-password-2.38.tgz",
+    "required": "2.36.1",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Extension to allow users to change their passwords"
+  },
+  {
+    "type": "plugin",
+    "id": "change-password-cpanel",
+    "name": "Change Password cPanel",
+    "version": "2.36",
+    "release": "2024-03-17",
+    "file": "plugins/change-password-cpanel-2.36.tgz",
+    "required": "2.36.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Extension to allow users to change their passwords through cPanel"
+  },
+  {
+    "type": "plugin",
+    "id": "change-password-froxlor",
+    "name": "Change Password Froxlor",
+    "version": "2.36",
+    "release": "2024-03-17",
+    "file": "plugins/change-password-froxlor-2.36.tgz",
+    "required": "2.36.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Extension to allow users to change their passwords through Froxlor"
+  },
+  {
+    "type": "plugin",
+    "id": "change-password-hestia",
+    "name": "Change Password Hestia",
+    "version": "2.36",
+    "release": "2024-03-17",
+    "file": "plugins/change-password-hestia-2.36.tgz",
+    "required": "2.36.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Extension to allow users to change their passwords through HestiaCP"
+  },
+  {
+    "type": "plugin",
+    "id": "change-password-hmailserver",
+    "name": "Change Password hMailServer",
+    "version": "2.36",
+    "release": "2024-03-17",
+    "file": "plugins/change-password-hmailserver-2.36.tgz",
+    "required": "2.36.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Extension to allow users to change their passwords through hMailServer"
+  },
+  {
+    "type": "plugin",
+    "id": "change-password-ispconfig",
+    "name": "Change Password ISPConfig",
+    "version": "2.36",
+    "release": "2024-03-17",
+    "file": "plugins/change-password-ispconfig-2.36.tgz",
+    "required": "2.36.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Extension to allow users to change their passwords through ISPConfig"
+  },
+  {
+    "type": "plugin",
+    "id": "change-password-mailcow",
+    "name": "Change Password Mailcow",
+    "version": "2.36",
+    "release": "2024-07-25",
+    "file": "plugins/change-password-mailcow-2.36.tgz",
+    "required": "2.36.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Extension to allow users to change their passwords through Mailcow"
+  },
+  {
+    "type": "plugin",
+    "id": "change-password-poppassd",
+    "name": "Change Password Poppassd",
+    "version": "2.36",
+    "release": "2024-03-17",
+    "file": "plugins/change-password-poppassd-2.36.tgz",
+    "required": "2.36.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Extension to allow users to change their passwords through Poppassd"
+  },
+  {
+    "type": "plugin",
+    "id": "change-smtp-ehlo-message",
+    "name": "Change SMTP EHLO Message",
+    "version": "0.0",
+    "release": "2026-09-12",
+    "file": "plugins/change-smtp-ehlo-message-0.0.tgz",
+    "required": "2.38.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Extension to enable custom SMTP EHLO messages"
+  },
+  {
+    "type": "plugin",
+    "id": "compact-composer",
+    "name": "Compact Composer",
+    "version": "1.0.6",
+    "release": "2024-08-08",
+    "file": "plugins/compact-composer-1.0.6.tgz",
+    "required": "2.34.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. WYSIWYG editor with a compact toolbar"
+  },
+  {
+    "type": "plugin",
+    "id": "contact-group-excel-paste",
+    "name": "contact group excel paste",
+    "version": "0.0",
+    "release": "2026-09-12",
+    "file": "plugins/contact-group-excel-paste-0.0.tgz",
+    "required": "2.38.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. SnappyMail legacy plugin"
+  },
+  {
+    "type": "plugin",
+    "id": "custom-login-mapping",
+    "name": "Custom Login Mapping",
+    "version": "2.3",
+    "release": "2024-09-21",
+    "file": "plugins/custom-login-mapping-2.3.tgz",
+    "required": "2.36.1",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Enables custom usernames by email address."
+  },
+  {
+    "type": "plugin",
+    "id": "custom-system-folders",
+    "name": "Custom System Folders",
+    "version": "0.0",
+    "release": "2026-09-12",
+    "file": "plugins/custom-system-folders-0.0.tgz",
+    "required": "2.38.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Set custom sytem folders"
+  },
+  {
+    "type": "plugin",
+    "id": "demo-account",
+    "name": "Demo Account Extension",
+    "version": "0.0",
+    "release": "2026-09-12",
+    "file": "plugins/demo-account-0.0.tgz",
+    "required": "2.23",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Extension to enable a demo account"
+  },
+  {
+    "type": "plugin",
+    "id": "example",
+    "name": "Example",
+    "version": "0.0",
+    "release": "2022-03-29",
+    "file": "plugins/example-0.0.tgz",
+    "required": "2.14.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. SnappyMail legacy plugin"
+  },
+  {
+    "type": "plugin",
+    "id": "haveibeenpwned",
+    "name": "Have i been pwned",
+    "version": "0.1",
+    "release": "2024-04-22",
+    "file": "plugins/haveibeenpwned-0.1.tgz",
+    "required": "2.36.1",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Check if your passphrase or email address is in a data breach"
+  },
+  {
+    "type": "plugin",
+    "id": "ics-viewer",
+    "name": "ICS Viewer",
+    "version": "1.0",
+    "release": "2024-09-17",
+    "file": "plugins/ics-viewer-1.0.tgz",
+    "required": "2.34.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Display ICS attachment using ical lib, or JSON-LD details, based on viewICS"
+  },
+  {
+    "type": "plugin",
+    "id": "imap-contacts-suggestions",
+    "name": "Contacts suggestions (IMAP folder)",
+    "version": "2.36",
+    "release": "2024-03-19",
+    "file": "plugins/imap-contacts-suggestions-2.36.tgz",
+    "required": "2.36.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Get contacts suggestions from IMAP INBOX folder."
+  },
+  {
+    "type": "plugin",
+    "id": "kolab",
+    "name": "Kolab",
+    "version": "2.37",
+    "release": "2024-03-29",
+    "file": "plugins/kolab-2.37.tgz",
+    "required": "2.36.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Use an Address Book of Kolab."
+  },
+  {
+    "type": "plugin",
+    "id": "ldap-contacts-suggestions",
+    "name": "Contacts suggestions (LDAP)",
+    "version": "2.14",
+    "release": "2024-03-12",
+    "file": "plugins/ldap-contacts-suggestions-2.14.tgz",
+    "required": "2.35.3",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Get contacts suggestions from LDAP."
+  },
+  {
+    "type": "plugin",
+    "id": "ldap-identities",
+    "name": "LDAP Identities",
+    "version": "2.3",
+    "release": "2024-02-27",
+    "file": "plugins/ldap-identities-2.3.tgz",
+    "required": "2.20.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Adds functionality to import account identities from LDAP."
+  },
+  {
+    "type": "plugin",
+    "id": "ldap-login-mapping",
+    "name": "LDAP login mapping",
+    "version": "2.3",
+    "release": "2024-09-20",
+    "file": "plugins/ldap-login-mapping-2.3.tgz",
+    "required": "2.36.1",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Enable custom mapping using ldap field"
+  },
+  {
+    "type": "plugin",
+    "id": "ldap-mail-accounts",
+    "name": "LDAP Mail Accounts",
+    "version": "2.2.1",
+    "release": "2024-09-20",
+    "file": "plugins/ldap-mail-accounts-2.2.1.tgz",
+    "required": "2.36.1",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Add additional mail accounts the SnappyMail user has access to by a LDAP query. Basing on the work of FWest98 (https://github.com/FWest98)."
+  },
+  {
+    "type": "plugin",
+    "id": "login-autoconfig",
+    "name": "Login Autoconfig",
+    "version": "1.1",
+    "release": "2024-03-12",
+    "file": "plugins/login-autoconfig-1.1.tgz",
+    "required": "2.35.3",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Tries to login using the domain autoconfig"
+  },
+  {
+    "type": "plugin",
+    "id": "login-cpanel",
+    "name": "Login cPanel",
+    "version": "1.4",
+    "release": "2024-03-27",
+    "file": "plugins/login-cpanel-1.4.tgz",
+    "required": "2.36.1",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Tries to login using the cPanel $_ENV[\"REMOTE_*\"] variables"
+  },
+  {
+    "type": "plugin",
+    "id": "login-external",
+    "name": "Login External",
+    "version": "1.4",
+    "release": "2024-07-01",
+    "file": "plugins/login-external-1.4.tgz",
+    "required": "2.36.1",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Login with $_POST[\"Email\"] and $_POST[\"Password\"] from anywhere"
+  },
+  {
+    "type": "plugin",
+    "id": "login-external-sso",
+    "name": "Login External SSO",
+    "version": "1.0",
+    "release": "2022-11-11",
+    "file": "plugins/login-external-sso-1.0.tgz",
+    "required": "2.21.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Login with $_POST \"Email\", \"Password\" and \"SsoKey\". It returns an SSO hash to use with \"?Sso&hash=\""
+  },
+  {
+    "type": "plugin",
+    "id": "login-o365",
+    "name": "Office365/Outlook OAuth2",
+    "version": "0.3",
+    "release": "2024-09-29",
+    "file": "plugins/login-o365-0.3.tgz",
+    "required": "2.36.1",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Office365/Outlook IMAP, Sieve & SMTP login using RFC 7628 OAuth2"
+  },
+  {
+    "type": "plugin",
+    "id": "login-oauth2",
+    "name": "OAuth2",
+    "version": "1.3",
+    "release": "2024-03-27",
+    "file": "plugins/login-oauth2-1.3.tgz",
+    "required": "2.36.1",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. IMAP, Sieve & SMTP login using RFC 7628 OAuth2"
+  },
+  {
+    "type": "plugin",
+    "id": "login-override",
+    "name": "Login Override",
+    "version": "2.4",
+    "release": "2024-09-20",
+    "file": "plugins/login-override-2.4.tgz",
+    "required": "2.36.1",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Override IMAP/SMTP login credentials for specific users."
+  },
+  {
+    "type": "plugin",
+    "id": "login-proxyauth-example",
+    "name": "Login PROXYAUTH",
+    "version": "1.0",
+    "release": "2024-03-12",
+    "file": "plugins/login-proxyauth-example-1.0.tgz",
+    "required": "2.35.3",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. IMAP login using PROXYAUTH"
+  },
+  {
+    "type": "plugin",
+    "id": "login-register",
+    "name": "Register and Forgot",
+    "version": "2.2",
+    "release": "2024-03-29",
+    "file": "plugins/login-register-2.2.tgz",
+    "required": "2.36.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Links on login screen for registration and forgotten password"
+  },
+  {
+    "type": "plugin",
+    "id": "login-remote",
+    "name": "Login Remote",
+    "version": "1.5",
+    "release": "2024-09-20",
+    "file": "plugins/login-remote-1.5.tgz",
+    "required": "2.36.1",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Tries to login using the $_ENV[\"REMOTE_*\"] variables"
+  },
+  {
+    "type": "plugin",
+    "id": "login-virtuser",
+    "name": "Virtuser Login",
+    "version": "0.2",
+    "release": "2024-09-20",
+    "file": "plugins/login-virtuser-0.2.tgz",
+    "required": "2.36.1",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. File based Email-to-User lookup."
+  },
+  {
+    "type": "plugin",
+    "id": "mailbox-detect",
+    "name": "MailboxDetect",
+    "version": "2.6",
+    "release": "2023-03-13",
+    "file": "plugins/mailbox-detect-2.6.tgz",
+    "required": "2.27.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Autodetect system folders and/or create them when needed"
+  },
+  {
+    "type": "plugin",
+    "id": "override-smtp-credentials",
+    "name": "Override SMTP Credentials",
+    "version": "2.5",
+    "release": "2024-03-12",
+    "file": "plugins/override-smtp-credentials-2.5.tgz",
+    "required": "2.35.3",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Override SMTP credentials for specific users."
+  },
+  {
+    "type": "plugin",
+    "id": "proxy-auth",
+    "name": "Proxy Auth",
+    "version": "0.5",
+    "release": "2024-09-20",
+    "file": "plugins/proxy-auth-0.5.tgz",
+    "required": "2.36.1",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Uses HTTP Remote-User and (Dovecot) master user for login"
+  },
+  {
+    "type": "plugin",
+    "id": "recaptcha",
+    "name": "reCaptcha",
+    "version": "2.16",
+    "release": "2024-03-12",
+    "file": "plugins/recaptcha-2.16.tgz",
+    "required": "2.35.3",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. A CAPTCHA (v2) is a program that can generate and grade tests that humans can pass but current computer programs cannot. For example, humans can read distorted text as the one shown below, but current computer programs can\\"
+  },
+  {
+    "type": "plugin",
+    "id": "search-filters",
+    "name": "Search Filters",
+    "version": "0.2",
+    "release": "2024-06-28",
+    "file": "plugins/search-filters-0.2.tgz",
+    "required": "2.36.3",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Add filters to search queries"
+  },
+  {
+    "type": "plugin",
+    "id": "send-save-in",
+    "name": "Send Save In",
+    "version": "0.1",
+    "release": "2024-10-08",
+    "file": "plugins/send-save-in-0.1.tgz",
+    "required": "2.38.1",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. When composing a message, select the save folder"
+  },
+  {
+    "type": "plugin",
+    "id": "set-remote-addr",
+    "name": "Set REMOTE_ADDR",
+    "version": "2.0",
+    "release": "2026-09-12",
+    "file": "plugins/set-remote-addr-2.0.tgz",
+    "required": "2.38.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Sets the $_SERVER[\\"
+  },
+  {
+    "type": "plugin",
+    "id": "smtp-use-from-adr-account",
+    "name": "Use From-Address-Account for smtp",
+    "version": "1.1",
+    "release": "2024-03-12",
+    "file": "plugins/smtp-use-from-adr-account-1.1.tgz",
+    "required": "2.35.3",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Set smpt-config and -credentials based on selected from-address-account"
+  },
+  {
+    "type": "plugin",
+    "id": "snowfall-on-login-screen",
+    "name": "Snowfall on login screen",
+    "version": "2.1",
+    "release": "2026-09-12",
+    "file": "plugins/snowfall-on-login-screen-2.1.tgz",
+    "required": "2.38.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Snowfall on login screen (just for fun)."
+  },
+  {
+    "type": "plugin",
+    "id": "two-factor-auth",
+    "name": "Two Factor Authentication",
+    "version": "2.19.0",
+    "release": "2024-03-29",
+    "file": "plugins/two-factor-auth-2.19.0.tgz",
+    "required": "2.36.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Provides support for TOTP 2FA"
+  },
+  {
+    "type": "plugin",
+    "id": "video-on-login-screen",
+    "name": "Video On Login Screen",
+    "version": "0.1",
+    "release": "2023-11-09",
+    "file": "plugins/video-on-login-screen-0.1.tgz",
+    "required": "2.5.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Play a simple video on the login screen."
+  },
+  {
+    "type": "plugin",
+    "id": "view-ics",
+    "name": "View ICS",
+    "version": "2.2",
+    "release": "2024-06-29",
+    "file": "plugins/view-ics-2.2.tgz",
+    "required": "2.34.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Display ICS attachment or JSON-LD details"
+  },
+  {
+    "type": "plugin",
+    "id": "white-list",
+    "name": "Whitelist",
+    "version": "2.2",
+    "release": "2024-03-04",
+    "file": "plugins/white-list-2.2.tgz",
+    "required": "2.5.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Simple login whitelist (with wildcard and exceptions functionality)."
+  },
+  {
+    "type": "plugin",
+    "id": "wysiwyg-example",
+    "name": "WYSIWYG Example",
+    "version": "1.0",
+    "release": "2024-01-30",
+    "file": "plugins/wysiwyg-example-1.0.tgz",
+    "required": "2.34.0",
+    "description": "Legacy / untested SnappyMail plugin. Use at your own risk. Add Example as WYSIWYG editor option"
+  }
+]

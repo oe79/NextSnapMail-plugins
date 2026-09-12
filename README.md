@@ -8,6 +8,10 @@ NextSnapMail as a SnappyMail-compatible plugin repository.
 Gmail / Google OAuth2 login is no longer distributed as a separate plugin. It is
 integrated directly into NextSnapMail starting with version `0.1.11`.
 
+The repository may provide legacy SnappyMail plugins for administrators who
+still need them. These packages are offered as old and untested compatibility
+plugins. Install and use them at your own risk.
+
 Repository URL after GitHub Pages is enabled:
 
 ```text
@@ -28,14 +32,15 @@ Packages listed in `packages.json` should use file paths relative to
 ```json
 {
   "type": "plugin",
-  "id": "login-gmail-oauth",
-  "name": "Login Gmail OAuth2",
-  "version": "0.4",
-  "release": "2026-08-05",
-  "file": "plugins/login-gmail-oauth-0.4.tgz",
-  "required": "2.36.1",
-  "description": "Gmail and Google Workspace IMAP/SMTP login using current Google OAuth2 endpoints"
+  "id": "example-plugin",
+  "name": "Example Plugin",
+  "version": "1.0",
+  "release": "2026-09-12",
+  "file": "plugins/example-plugin-1.0.tgz",
+  "required": "2.38.0",
+  "description": "Legacy / untested SnappyMail plugin. Use at your own risk."
 }
 ```
 
-At the moment, no external plugin package is published here.
+Legacy Gmail plugins are intentionally not published here because Gmail / Google
+OAuth2 support is integrated directly into NextSnapMail.
